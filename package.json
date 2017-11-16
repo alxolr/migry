@@ -1,0 +1,27 @@
+{
+  "name": "migry",
+  "version": "0.0.1",
+  "description": "Simple mongoose database migration manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxolr/migry.git"
+  },
+  "bin": {
+    "migry": "./bin/migry"
+  },
+  "keywords": [
+    "database-migration",
+    "mongoose-migration",
+    "manager"
+  ],
+  "author": "Alexandru Olaru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alxolr/migry/issues"
+  },
+  "homepage": "https://github.com/alxolr/migry#readme"
+}
