@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 
 const program = require('commander');
+const migry = require('../lib/migry');
 
 program
-  .version('0.0.2')
-  .option('-c, --create [name]', 'Create a new migration <name>', '')
-  .option('-l, --list', 'List existing migrations')
-  .option('-u, --up [name]', 'Migrate up <name>', '')
-  .option('-d, --down [name]', 'Migrate down <name>', '')
-  .parse(process.argv);
+  .version('0.0.2');
+
+program.command('list')
+  .description('list the existing migrations')
+  .action(migry.list);
+
+program.command('create <name>')
+  .description('create a new migration')
+  .action(migry.create);
+
+
+program.parse(process.argv);
