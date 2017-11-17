@@ -1,14 +1,1 @@
-module.exports = {
-  up() {
-
-  },
-  down() {
-
-  },
-  list() {
-
-  },
-  create() {
-
-  }
-};
+module.exports = {};

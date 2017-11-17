@@ -30,6 +30,7 @@
     "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
-    "commander": "^2.11.0"
+    "commander": "^2.11.0",
+    "mongoose": "^4.13.3"
   }
 }
