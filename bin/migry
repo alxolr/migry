@@ -14,5 +14,4 @@ program.command('create <name>')
   .description('create a new migration')
   .action(migry.create);
 
-
 program.parse(process.argv);
