@@ -1,6 +1,0 @@
-{
-  "local": {
-    "uri": "mongodb://localhost:27017/pop-n-event",
-    "options": {}
-  }
-}
