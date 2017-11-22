@@ -15,7 +15,7 @@ program.command('create <name>')
   .description('create a new migration')
   .action(migry.create);
 
-program.command('run')
+program.command('run [name]')
   .description('run updates to latest or current')
   .action(migry.run);
 

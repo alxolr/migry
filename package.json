@@ -1,6 +1,6 @@
 {
   "name": "migry",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple mongoose database migration manager",
   "main": "index.js",
   "scripts": {
