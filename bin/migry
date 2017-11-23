@@ -5,7 +5,8 @@ const migry = require('../lib/migry');
 
 program
   .version('0.0.3')
-  .option('-c, --config [path]', 'mongodb connection config file path [path]', '');
+  .option('-c, --config [path]', 'mongodb connection config file path [path]', '')
+  .option('-e, --env [name]', 'specify environment [name]', 'local');
 
 program.command('list')
   .description('list existing migration files')

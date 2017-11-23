@@ -1,6 +1,6 @@
 {
   "name": "migry",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Simple mongoose database migration manager",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,6 @@
     "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
-    "commander": "^2.11.0",
-    "mongoose": "^4.13.3"
+    "commander": "^2.11.0"
   }
 }
