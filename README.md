@@ -76,7 +76,8 @@ module.exports = {
 > ./node_modules/.bin/migry list
 
 1511163445408-ich.js
-1511163447619-ni.js1511163449369-san.js
+1511163447619-ni.js
+1511163449369-san.js
 1511163451497-shi.js
 1511163453742-roku.js
 1513353185076-add-users.js
