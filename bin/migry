@@ -4,13 +4,17 @@ const program = require('commander');
 const migry = require('../lib/migry');
 
 program
-  .version('0.0.3')
+  .version('0.2.2')
   .option('-c, --config [path]', 'mongodb connection config file path [path]', '')
   .option('-e, --env [name]', 'specify environment [name]', 'local');
 
 program.command('list')
   .description('list existing migration files')
   .action(migry.list);
+
+program.command('init')
+  .description('init the migration folder with the config.json file')
+  .action(migry.init);
 
 program.command('create <name>')
   .description('create a new migration')

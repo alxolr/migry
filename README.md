@@ -6,9 +6,13 @@
 
 > `npm install migry`
 
+## Compatibility
+
+- node.js 8.x+
+
 ## Usage
 
-- Create a folder `migrations/` in your project.
+- Create a folder `migrations/` in your project or you can use the `./node_modules/.bin/migry init` command
 - Add a config file `mingrations/config.json`
 
 ```javascript
@@ -20,7 +24,7 @@
     "options": {}
   },
   "preprod": {
-    "uri": "mongodb://<username>:<password>:<preprod-mongohost>:<port>/db-name",
+    "uri": "mongodb://<username>:<password>@<preprod-mongohost>:<port>/db-name",
     "options": {
       "ca_certificate_base64": "<the base64 certificate for connection>"
     }
@@ -34,14 +38,23 @@
 > ./node_modules/.bin/migry
 
 Usage: migry [options] [command]
-  Commands:
+Commands:
 
     list           list existing migration files
+    init           init the migration folder with the config.json file
     create <name>  create a new migration
     run [name]     run updates to latest or specified [name]
 ```
 
 ## API
+
+- Init the migration folder
+
+```bash
+> ./node_modules/.bin/migry init
+
+migrations/config.json file was successfully created⏎
+```
 
 - Create a new migration
 
@@ -58,11 +71,13 @@ const User = require('../models/user.model');
 // you can use all your mongoose models
 
 function run(done) {
-  User.find({})
+  return User
+    .find({})
     .then((users) => {
       // do some logic
       done();
-      });
+    })
+    .catch(done);
 }
 
 module.exports = {
