@@ -13,7 +13,7 @@
 ## Usage
 
 - Create a folder `migrations/` in your project or you can use the `./node_modules/.bin/migry init` command
-- Add a config file `mingrations/config.json`
+- Add a config file `migrations/config.json`
 
 ```javascript
 // migrations/config.json
@@ -112,7 +112,7 @@ module.exports = {
 > ./node_modules/.bin/migry run
 ```
 
-- Run migration on specific **environment**
+- Run migrations on specific **environment**
 
 ```bash
 > ./node_modules/.bin/migry run --env prod

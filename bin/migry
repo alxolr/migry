@@ -4,7 +4,7 @@ const program = require('commander');
 const migry = require('../lib/migry');
 
 program
-  .version('0.2.2')
+  .version('0.2.4')
   .option('-c, --config [path]', 'mongodb connection config file path [path]', '')
   .option('-e, --env [name]', 'specify environment [name]', 'local');
 
