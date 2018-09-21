@@ -70,19 +70,14 @@ migrations/config.json file was successfully created⏎
 const User = require('../models/user.model');
 // you can use all your mongoose models
 
-function run(done) {
-  return User
-    .find({})
-    .then((users) => {
-      // do some logic
-      done();
-    })
-    .catch(done);
+async function migrate() {
+  const users = await User.find({});
+  // do your logic
+
+  return;
 }
 
-module.exports = {
-  run,
-};
+module.exports = migrate;
 ```
 
 - List existing migrations

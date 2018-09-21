@@ -1,6 +1,6 @@
 {
   "name": "migry",
-  "version": "0.2.5",
+  "version": "0.3.1",
   "description": "Simple mongoose database migration manager",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,9 @@
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0"
+  },
+  "peerDependencies": {
+    "mongoose": "5.x"
   },
   "dependencies": {
     "commander": "^2.11.0",
